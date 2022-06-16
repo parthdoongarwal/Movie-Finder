@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+    <link rel="icon" type="image/x-icon" href="Magnifying_glass_icon.svg.png">
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body id = "body">
+   
+<div id = "con">
+    <div id = "loaderr"></div>
+    <div id = "header">
+<div id = "inner">
+    <div id = "input-inner">
+    <input type="text" id = "Movie-input" placeholder="Type which movie you want to watch">
+    <input type="number" placeholder="(OPTIONAL) type the year of the movie" id = "year-input" >
+</div>
+    <button onclick = "getMovie()" class="button-50">Search</button>
+</div>
+</div>
+
+<main>
+    <div id = "image-con">
+        <img src="" alt="" id = "img">
+    </div>
+    <div id = "details">
+     <h1 id = "title" class = "dt"></h1>
+        <h1 id = "released" class="dt"></h1>
+        <h1 id = "imdbrating" class = "dt"></h1>
+        <h1 id = "runtime" class="dt"></h1>
+        <h1 id = "actors" class="dt"></h1>
+        <h1 id = "genre" class="dt"></h1>
+        <h1 id = "language" class="dt"></h1>
+        <h1 id = "plot" class="dt"></h1>
+        <h1 id = "director" class="dt"></h1>
+    </div>
+</main>
+
+
+</div>
+
+</body>
+<script src = "index.js"></script>
+</html>

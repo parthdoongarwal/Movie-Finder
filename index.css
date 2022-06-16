@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+ 
+}
+
+#header{
+    background:#990606;
+    height:15vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#inner{
+width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#Movie-input:focus{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+
+
+/* CSS */
+.button-50 {
+    
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 20px 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width:200px;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+}
+
+
+/* main ----------------------------------------------------  */
+
+main{
+  
+display:flex;
+    
+}
+
+#image-con{
+    padding:20px;
+  
+    width:30%;
+}
+#img{
+width:70%;
+}
+
+#details{
+   
+    width:70%;
+    height:100%;
+}
+
+.dt{
+  
+  transition: 600ms;
+  font-size:20px;
+  font-weight: 100;
+  
+  margin-top:20px;
+}
+
+.impact{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+#title{
+  font-weight: 10000;
+  font-size: 30px;
+}
+
+#plot{
+  line-height: 30px;
+
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: white;
+ 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: none;
+}
+
+
+#input-inner{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+#Movie-input{
+  border:none;
+transition: 500ms;
+padding:15px;
+width:30%;   
+outline:none;
+font-size:20px;
+margin-right:25px;
+
+}
+
+#year-input{
+  margin-left:25px;
+  border:none;
+  transition: 500ms;
+  padding:15px;
+  width:30%;   
+  outline:none;
+  font-size:18px;
+  
+}
+
+.loader {
+  position: absolute;
+  top:50%;
+  left:45%;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@media(max-width:1000px){
+ #input-inner{
+  height:100%;
+  flex-direction: column;
+ }
+ #inner{
+  height:100%;
+  
+ }
+ #header{
+  height:40vh;
+ }
+ #Movie-input{
+margin-bottom:30px;
+width:80%;
+ }
+ #year-input{
+  margin:0;
+  margin-right:20px;
+  width:80%;
+ }
+ main{
+  justify-content: center;
+align-items: center;
+  flex-direction: column;
+ }
+ #image-con{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+ }
+ #img{
+  width:50%;
+ }
+
+ #details{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+ }
+}
